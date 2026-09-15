@@ -5,21 +5,21 @@
 class ClaudeStatusline < Formula
   desc "Configurable status line for Claude Code"
   homepage "https://github.com/frank-bee/claude-statusline"
-  version "0.10.1"
+  version "0.11.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/frank-bee/claude-statusline/releases/download/v0.10.1/claude-statusline_0.10.1_darwin_amd64.tar.gz"
-      sha256 "9b3c0e33a1e0abc43642340b81e13f19d20a0e1f2db85954be1f1fc3d070ff4c"
+      url "https://github.com/frank-bee/claude-statusline/releases/download/v0.11.0/claude-statusline_0.11.0_darwin_amd64.tar.gz"
+      sha256 "c90c525062c25df47c14edcad306a62f041d8d24302ea8a121d62a295219241e"
 
       define_method(:install) do
         bin.install "claude-statusline"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/frank-bee/claude-statusline/releases/download/v0.10.1/claude-statusline_0.10.1_darwin_arm64.tar.gz"
-      sha256 "84b60d2b853d672520a3040051589d18c38b7cdcadf4f4e9d95fe49e183115da"
+      url "https://github.com/frank-bee/claude-statusline/releases/download/v0.11.0/claude-statusline_0.11.0_darwin_arm64.tar.gz"
+      sha256 "864431e6b0118d4bb30bafdd5268285e92479936386cc03f5af8ddd6382e96a5"
 
       define_method(:install) do
         bin.install "claude-statusline"
@@ -29,15 +29,15 @@ class ClaudeStatusline < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/frank-bee/claude-statusline/releases/download/v0.10.1/claude-statusline_0.10.1_linux_amd64.tar.gz"
-      sha256 "190de929cb5b37a90d80773b67bb1fdaad1d22f3247b6819fcf1a10ca0a7b390"
+      url "https://github.com/frank-bee/claude-statusline/releases/download/v0.11.0/claude-statusline_0.11.0_linux_amd64.tar.gz"
+      sha256 "19ff853e87f77587ab04b89eafa8a7cfa4aaa0220252d93c4b49db392fea80a0"
       define_method(:install) do
         bin.install "claude-statusline"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/frank-bee/claude-statusline/releases/download/v0.10.1/claude-statusline_0.10.1_linux_arm64.tar.gz"
-      sha256 "52b22f83b92eacc43f0fb6e15c1904e9f88591925375051227d07e7d1d7a24ae"
+      url "https://github.com/frank-bee/claude-statusline/releases/download/v0.11.0/claude-statusline_0.11.0_linux_arm64.tar.gz"
+      sha256 "8e713abaf3309e697b289df652f268e09ed556536c7b1c4cf90da059979c4881"
       define_method(:install) do
         bin.install "claude-statusline"
       end
